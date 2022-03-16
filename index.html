@@ -9,51 +9,42 @@
   </head>
   <body>
     <div class="wrapper">
-      <section class="kelvin">
-        <div class="kelvin__tube universal-tube">
-          <div class="kelvin__tube--color"></div>
-        </div>
-        <div>
-          <input
-            type="number"
-            id="input-kelvin"
-            max="4"
-            min="1"
-            maxlength="4"
-          />
-          <label for="input-kelvin">Kelvin</label>
-        </div>
-      </section>
-      <section class="celsius">
-        <div class="celsius__tube universal-tube">
-          <div class="celsius__tube--color"></div>
-        </div>
-        <div>
-          <input
-            type="number"
-            id="input-celsius"
-            max="4"
-            min="1"
-            maxlength="4"
-          />
-          <label for="input-celsius">Celsius</label>
-        </div>
-      </section>
-      <section class="fahrenheit">
-        <div class="fahrenheit__tube universal-tube">
-          <div class="fahrenheit__tube--color"></div>
-        </div>
-        <div>
-          <input
-            type="number"
-            id="input-fahrenheit"
-            max="4"
-            min="1"
-            maxlength="4"
-          />
-          <label for="input-fahrenheit">Fahrenheit</label>
-        </div>
-      </section>
+      <header class="header">
+        <h1 class="h1">Temperature Conversion</h1>
+      </header>
+      <div class="tube-boxes">
+        <section class="kelvin">
+          <div class="kelvin__tube universal-tube">
+            <div class="kelvin__tube--color"></div>
+          </div>
+          <div>
+            <input type="number" id="input-kelvin" />
+            <label for="input-kelvin">Kelvin</label>
+          </div>
+        </section>
+        <section class="celsius">
+          <div class="celsius__tube universal-tube">
+            <div class="celsius__tube--color"></div>
+          </div>
+          <div>
+            <input type="number" id="input-celsius" />
+            <label for="input-celsius">Celsius</label>
+          </div>
+        </section>
+        <section class="fahrenheit">
+          <div class="fahrenheit__tube universal-tube">
+            <div class="fahrenheit__tube--color"></div>
+          </div>
+          <div>
+            <input type="number" id="input-fahrenheit" />
+            <label for="input-fahrenheit">Fahrenheit</label>
+          </div>
+        </section>
+      </div>
+      <div class="tube__buttons">
+        <button type="reset" class="btn-reset hide">Reset</button>
+        <button type="button" class="btn-conversion">Conversion</button>
+      </div>
     </div>
   </body>
   <script src="./script/app.js"></script>
