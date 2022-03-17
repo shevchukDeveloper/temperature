@@ -34,7 +34,7 @@ const handleChange = (e) => {
     //celsius
     if (celsius.value >= 500) {
         celsiusColor.style.height = 496 + 'px'  
-    } else if (celsius.value <= 0) {
+    } else if (celsius.value < 0) {
          celsiusColor.style.height = Math.abs(celsius.value) + 'px'
     } else {
         celsiusColor.style.height = celsius.value + 'px'
@@ -42,7 +42,7 @@ const handleChange = (e) => {
     //kelvin
     if (kelvin.value >= 500) {
         kelvinColor.style.height = 496 + 'px'  
-    } else if (kelvin.value <= 0) {
+    } else if (kelvin.value < 0) {
          kelvinColor.style.height = Math.abc(kelvin.value) + 'px'
     } else {
         kelvinColor.style.height = kelvin.value + 'px'
@@ -51,8 +51,9 @@ const handleChange = (e) => {
     //fahrenheit
     if (fahrenheit.value >= 500) {
         fahrenheitColor.style.height = 496 + 'px'  
-    } else if (fahrenheit.value <= 0) {
-         fahrenheitColor.style.height = Math.abs(fahrenheit.value) + 'px'
+    } else if (fahrenheit.value < 0) {
+        fahrenheitColor.style.height = Math.abs(fahrenheit.value) + 'px'
+        console.log(fahrenheitColor.style.height);
     } else {
         fahrenheitColor.style.height = fahrenheit.value + 'px'
     }
